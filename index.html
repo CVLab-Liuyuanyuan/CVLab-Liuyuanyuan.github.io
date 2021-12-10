@@ -425,7 +425,7 @@
         <td width="16.6%"><a href=""><img src="image/member/wangkunpeng.jpg" width="100%">Wang Kunpeng</a></td>
         <td width="16.6%"><a href=""><img src="image/member/fengchuanxu.png" width="100%">Feng Chuanxu</a></td>
         <td width="16.6%"><a href=""><img src="image/member/wangwenbin.jpg" width="100%">Wang Wenbin</a></td>
-        
+
     </tr>
     <tr><td><br></td></tr>
     <tr align="center">
@@ -462,6 +462,27 @@
     </tr>
     </tbody>
 </table>
+<br>
+<body>
+    <span id="clock"></span>
+</body>
+<script>
+    function displayTime(){
+        var elt = document.getElementById("clock");
+        var now = new Date();
+        elt.innerHTML  = now.toLocaleTimeString();
+        setTimeout(displayTime,1000);
+        }
+    window.onload = displayTime;
+</script>
+<style>
+#clock{
+    font: bold 24pt sans;
+    background: rgba(238, 237, 240, 0.507);
+    padding: 10px;
+    border: solid rgb(170, 170, 170) 2px;
+    border-radius: 10px;}
+</style>
 
 
 </body></html>
